@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(to right,silver,coral);
+}
+header {
+    background-color:  slateblue;
+    border: 3px solid rgb(32, 6, 80);
+    text-align: center;
+    padding: 1px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    margin-left: 10px;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav > ul {
+    background-color: chocolate;
+    border: 3px solid magenta  (128, 128, 7);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+nav > ul > li > a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black !important;
+    background-color: fuchsia;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul > li > a:hover {
+    color: white !important;
+    background-color: lime;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    max-width: 600px;
+}
+
+dt {
+    display: inline-block;
+    padding: 5px;
+    background-color: wheat;
+    border-radius: 20px;
+}
+dd {
+    padding-bottom: 15px;
+}
+
+footer {
+    /*border-radius: 20px;*/
+    border: 3px solid rgb(104, 8, 8);
+    background-color: maroon;
+    color: white;
+    padding: 20px;
+    margin-bottom: 3px;
+}
+
+address > p {
+    padding: 0;
+    margin: 0;
+}
+
+code > pre {
+    border-radius: 40px;
+    border: 1px solid black;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+summary {
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.extranote {
+    border-width: 1px 0px; 
+    border-style: dashed; 
+    border-color: black; 
+    margin-bottom: 10px;
+}

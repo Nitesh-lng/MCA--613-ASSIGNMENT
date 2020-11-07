@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA 613 Assignment</title>
+
+    <link rel="stylesheet" href="https://utk-dev.github.io/feather/feather.css">
+    <link rel="stylesheet" href="./feather-override.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML Assignment</h1>
+        <h2>About JavaScript</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./html.html">HTML</a></li>
+            <li><a href="./css.html">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+    </nav>
+    <main>
+        <figure>
+            <img src="images/javascript.png" alt="JS">
+            <figcaption>Building blocks of a website</figcaption>
+        </figure>
+    </main>
+    <main>
+        <article>
+            <h3>1. Introduction</h3>
+            <section>
+                <h4><abbr title="Document Object Model">1.1. DOM</abbr></h4>
+                <p>
+                    Document Object Model is a hierarchical object representation of a document. Similar to an n-ary
+                    tree data structure, <em>DOM can represent a nested parent-child relationship between various
+                        components of the document.</em>
+                </p>
+                <p>
+                    For HTML, having a DOM representation makes it convenient to access and manipulate the document
+                    programmatically. Given below is the DOM of a typical HTML document:
+                </p>
+                <figure>
+                    <img src="images/dom-tree.gif" alt="Document Object Model Tree Example">
+                    <figcaption><q cite="https://www.w3schools.com/js/js_htmldom.asp">When a web page is loaded, the
+                            browser creates a <b>D</b>ocument <b>O</b>bject <b>M</b>odel of the page.</q></figcaption>
+                </figure>
+                <section>
+                    <h5>1.1.1. Salient Features of DOM</h5>
+                    <ul>
+                        <li>A child inherits properties of its parent by default.</li>
+                        <li>A child can be accessed hierarchically from its parent using (.) notation.</li>
+                        <li>Interaction with the elements can be checked and programmed using certain properties of DOM
+                            Elements called “event listeners”.</li>
+                        <li><mark>Document is the parent of all items in the HTML webpage.</mark></li>
+                    </ul>
+                    <p>
+                        There are special functions like <code>getElementById()</code> that can dive through the DOM and
+                        return HTML elements in the form of JavaScript objects.
+                    </p>
+                </section>
+            </section>
+        </article>
+        <article>
+            <h3>2. Using JavaScript</h3>
+            <section>
+                <h4>2.1. Including JavaScript</h4>
+                <p>JavaScript can be included in an HTML file using either of the two methods given below:</p>
+                <ul>
+                    <li>Tag:
+                        <code>&lt;script&gt;alert("OH!");&lt;/script&gt;</code>
+                    </li>
+                    <li>File:
+                        <code>&lt;script src="app.js"&gt;</code>
+                    </li>
+                </ul>
+                <p>JavaScript is used to add functionality and interactivity to an HTML page. Here is an example of the
+                    capabilities of JavaScript: <a href="https://go.pioneer.com/cornrevolution">Corn Revolution</a></p>
+            </section>
+
+        </article>
+    </main>
+    <footer>
+        <address>
+            <p>Created by Nitesh Kumar Singh</p>
+            <p>Scholar No.192120004</p>
+            <p>Maulana Azad National Institute of Technology</p>
+            <p>Bhopal - 462003</p>
+        </address>
+    </footer>
+</body>
+
+</html>

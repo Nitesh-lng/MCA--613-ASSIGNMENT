@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA 613 Assignment</title>
+    
+    <link rel="stylesheet" href="https://utk-dev.github.io/feather/feather.css">
+    <link rel="stylesheet" href="./feather-override.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML Assignment</h1>
+        <h2>About HTML</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="./css.html">CSS</a></li>
+            <li><a href="./javascript.html">JavaScript</a></li>
+        </ul>
+    </nav>
+    <main>
+        <figure>
+            <img src="images/html.png" alt="HTML">
+            <figcaption>Building blocks of a website</figcaption>
+        </figure>
+    </main>
+    <main>
+        <article>
+            <h3>1. Introduction</h3>
+            <section>
+                <h4>1.1. Basics</h4>
+                <p>
+                    <dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn>: HTML is a markup language that is
+                    used create structure and give meaning of various parts of a webpage. Special software called
+                    browsers can parse HTML files and show them in a more presentable format. It is not a real
+                    programming language.
+                </p>
+                <p>
+                    HTML consists of unary or paired constructs called <mark>tags</mark>, where each tag adds some
+                    semantics to the content on the page. The behavior of a TAG can be changed by manipulating its
+                    <mark>attributes</mark>. HTML is case-insensitive.
+                </p>
+            </section>
+            <section>
+                <h4>1.2. Structure</h4>
+                <p>Given below is a standard structure of an HTML5 document (the latest specification of HTML):</p>
+                <code>
+                    <pre>
+&lt;!DOCTYPE html&gt;   &leftarrow; Tells the parser that this is a valid HTML5 document.
+&lt;html lang="en"&gt;  &leftarrow; Document starts here
+    &lt;head&gt;        
+        &lt;title&gt;Title of the document&lt;title&gt;
+        &lt;!-- This is a comment --&gt;    &leftarrow; More metadata can be included here using &lt;meta&gt;
+    &lt;/head&gt;
+    &lt;body&gt;    &leftarrow; The actual document visible to the user
+        &lt;header&gt;
+            ...     &leftarrow; May (not) contain &lt;nav&gt; navigation
+        &lt;/header&gt;
+        &lt;main&gt;
+            &downarrow; Following depends on the structure of the document
+            &lt;article&gt;
+                ...
+            &lt;/article&gt;
+            &lt;article&gt;
+                ...
+            &lt;/article&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+            ...    &leftarrow; My contain address or contact information
+        &lt;/footer&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </code>
+            </section>
+        </article>
+        <article>
+            <h3>2. Features</h3>
+            <section>
+                <h4><abbr title="HyperText Markup Language Tags">2.1. HTML Tags</abbr></h4>
+                <p>HTML tags can be classified into two principal categories based on how they take up space in a
+                    document:</p>
+                <h5>2.1.1. Block Level Elements</h5>
+                <ol>
+                    <li>Block level elements give physical Structure to a document.</li>
+                    <li>A block level element occupies its own line and always displays by breaking the previous line.
+                    </li>
+                    <li>A block level element cannot be a children of an inline element.</li>
+                    <li>For example, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;nav&gt;</code> etc.
+                    </li>
+                </ol>
+                <h5>2.1.2. Inline Elements</h5>
+                <ol>
+                    <li>As the name suggests, they do not break lines and do not add extra space around themselves.</li>
+                    <li>They have no restrictions for nesting and be put inside a block level element or another inline
+                        element.</li>
+                    <li>For example, <code>&lt;span&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;a&gt;</code> etc.</li>
+                </ol>
+            </section>
+            <section>
+                <h4>2.2. Miscellaneous</h4>
+                <p>
+                    The latest revision of HTML standard is always accessible <a
+                        href="https://html.spec.whatwg.org/">here.</a>
+                </p>
+                <p>
+                    The headlining feature of HTML is the <strong>Hyperlinks that are clickable items which let the user
+                        navigate from one HTML document to another HTML document, media file or some other section of
+                        the same page</strong>.
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <address>
+            <p>Created by Nitesh Kumar Singh</p>
+            <p>Scholar No.192120004</p>
+            <p>Maulana Azad National Institute of Technology</p>
+            <p>Bhopal - 462003</p>
+        </address>
+    </footer>
+</body>
+
+</html>

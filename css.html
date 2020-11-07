@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA 613 Assignment</title>
+    
+    <link rel="stylesheet" href="https://utk-dev.github.io/feather/feather.css">
+    <link rel="stylesheet" href="./feather-override.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML Assignment</h1>
+        <h2>About CSS</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./html.html">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="./javascript.html">JavaScript</a></li>
+        </ul>
+    </nav>
+    <main>
+        <figure>
+            <img src="images/css.png" alt="CSS">
+            <figcaption>Building blocks of a website</figcaption>
+        </figure>
+    </main>
+    <main>
+        <article>
+            <h3>1. Introduction</h3>
+            <section>
+                <h4>1.1. Basics</h4>
+                <p>
+                    <dfn><abbr title="Cascading StyleSheets">CSS</abbr></dfn>: Cascading stylesheets are files used to
+                    style HTML documents. They have special selection syntax that allows us to change the appearance of
+                    certain elements based on their attributes and tags. There are three major ways of including a CSS
+                    style in an HTML document:
+                </p>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>
+                        <details>
+                            <summary>
+                                Attribute: <code>&lt;span style="color: crimson "&gt;This is NIT Bhopal&lt;span&gt;</code>
+                            </summary>
+                            <p>
+                                This method does not require CSS Selection syntax and allows us to manipulate the
+                                elements' appearance directly from within its tag. This form of CSS Styling has the
+                                highest precedence over all other ways of using CSS on this HTML Element.
+                            </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>
+                                Tag: <code>&lt;style&gt;&lt;/style&gt;</code>
+                            </summary>
+                            <p>
+                                This method works using CSS Selectors and allows us to style multiple elements with
+                                commmon properties at once. Rules of specificity apply here.
+                            </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>
+                                File: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+                            </summary>
+                            <p>
+                                This allows us to write styles in a separate file and attach it to any HTML document.
+                                This enables uniform styling across multiple HTML pages.
+                            </p>
+                        </details>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h4>1.2. Some definitions</h4>
+                <dl>
+                    <dt><code>div { }</code></dt>
+                    <dd>Selects all <code>&lt;div&gt;</code> tags.</dd>
+                    <dt><code>.important { }</code></dt>
+                    <dd>Selects all elements with class "important".</dd>
+                    <dt><code>#graphics { }</code></dt>
+                    <dd>Selects an element whose id is "graphics".</dd>
+                    <dt><code>input[type="password"] { }</code></dt>
+                    <dd>Selects all <code>&lt;input&gt;</code> tags with "type" attribute set to "password".</dd>
+                    <dt><code>input[type="text"].important { }</code></dt>
+                    <dd>Selects all <code>&lt;input&gt;</code> tags with type="text" and class="important".</dd>
+                    <dt><code>div &gt; p { }</code></dt>
+                    <dd>Selects all paragraphs that are direct children of &lt;div&gt; tags.</dd>
+                    <dt><code>div p { }</code></dt>
+                    <dd>Selects all paragraphs that are direct or indirect children of &lt;div&gt; tags.</dd>
+                    <dt><code>div::before { }</code></dt>
+                    <dd>Selects pseudoclass representing the space before &lt;div&gt; tags.</dd>
+                    <dt><code>a:visited { }</code></dt>
+                    <dd>An anchor tag link that has been clicked before.</dd>
+                </dl>
+                <p>
+                    Each selector has a specificity associated with, the more specific it is, the more it overrides
+                    other styles.
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <address>
+            <p>Created by Nitesh Kumar Singh</p>
+            <p>Scholar No.192120004</p>
+            <p>Maulana Azad National Institute of Technology</p>
+            <p>Bhopal - 462003</p>
+        </address>
+    </footer>
+</body>
+
+</html>
